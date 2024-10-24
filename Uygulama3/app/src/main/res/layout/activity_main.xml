@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Adınızı-Soyadınızı Giriniz"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mesleğinizi Giriniz"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Tecrübe Yılı"
+        android:gravity="center"
+        android:layout_alignStart="@id/editTextText2"
+        android:layout_below="@id/editTextText2"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Doğum Yılı"
+        android:gravity="center"
+        android:layout_toRightOf="@id/editTextText3"
+        android:layout_below="@id/editTextText2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextText4"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>
