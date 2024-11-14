@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtAdSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Adınızı Soyadınızı Giriniz"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Telefon"
+        app:layout_constraintStart_toStartOf="@+id/txt_Telefon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="262dp"
+        android:ems="10"
+        android:hint="Mailinizi Giriniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="Telefonunuzu Giriniz"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail" />
+
+    <Button
+        android:id="@+id/btn_Kaydo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="54dp"
+        android:text="Kaydet"
+        app:layout_constraintStart_toStartOf="@+id/txt_Telefon"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Telefon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
