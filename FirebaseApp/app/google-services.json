@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "744935464811",
+    "project_id": "fir-apphafta12",
+    "storage_bucket": "fir-apphafta12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744935464811:android:b20184a66e24f9b2a8762e",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByzen4vxuk9ZUUdF9NYJFRnCvMNXr8y-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
