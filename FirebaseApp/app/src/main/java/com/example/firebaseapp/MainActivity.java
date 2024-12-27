@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(MainActivity.this, "Kullanıcı başarıyla giriş yaptı...", Toast.LENGTH_SHORT).show();
+                                    Intent intent=new Intent(MainActivity.this,ListelemeActivity.class);
+                                    startActivity(intent);
                                 }else{
                                     Toast.makeText(MainActivity.this, "Mail veya şifre yanlış...", Toast.LENGTH_SHORT).show();
                                 }
