@@ -2,6 +2,7 @@ package com.example.firebaseapp;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,7 +80,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     ab.setNeutralButton("Güncelle", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                           //Güncelleme işlemleri
+                            Intent guncelle_intent=new Intent(itemView.getContext(), GuncelleActivity.class);
+                            guncelle_intent.putExtra("müşteri",müşteriler.get(p));
+                            itemView.getContext().startActivity(guncelle_intent);
                         }
                     });
                     ab.show();

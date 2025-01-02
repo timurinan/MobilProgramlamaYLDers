@@ -1,6 +1,8 @@
 package com.example.firebaseapp;
 
-public class Müşteri {
+import java.io.Serializable;
+
+public class Müşteri implements Serializable {
 
     private String adsoyad, mail,telefon,uid;
 
